@@ -61,6 +61,7 @@ body {
     background-color: #151515;
     border-bottom: solid 2px #272727;
 }
+
 .navbar-brand {
     color: #00B4D8 !important;
     position: static;
@@ -78,7 +79,10 @@ body {
     transition: .5s ease-in-out;
 }
 
-.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
     border: 0;
@@ -106,31 +110,33 @@ body {
     margin-top: 0 !important;
 }
 
-.navbar-toggler .top-bar{
+.navbar-toggler .top-bar {
     margin-top: 0px !important;
     transform: rotate(135deg);
 }
-.navbar-toggler .middle-bar{
+
+.navbar-toggler .middle-bar {
     opacity: 0 !important;
     filter: alpha(opacity=0) !important;
 
 }
-.navbar-toggler .bottom-bar{
+
+.navbar-toggler .bottom-bar {
     margin-top: 0px !important;
     transform: rotate(-135deg);
 }
 
-.navbar-toggler.collapsed .top-bar{
+.navbar-toggler.collapsed .top-bar {
     margin-top: -15px !important;
     transform: rotate(0deg);
 }
 
-.navbar-toggler.collapsed .middle-bar{
+.navbar-toggler.collapsed .middle-bar {
     opacity: 1 !important;
-    filter: alpha(opacity=100)!important;
+    filter: alpha(opacity=100) !important;
 }
 
-.navbar-toggler.collapsed .bottom-bar{
+.navbar-toggler.collapsed .bottom-bar {
     margin-top: 15px !important;
     transform: rotate(0deg);
 }
@@ -143,49 +149,94 @@ body {
 ------------------------------------------------------------------
 */
 
-.margin{
+.margin {
     margin-bottom: 80%;
 }
 
 .home {
+    /* border-bottom: solid #272727 3px; */
+}
+
+.text-animation {
+    margin-left: 15.5% !important;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 60vh;
-    border-bottom: solid #272727 3px;
-    background-color: #111111;
+    background-color: #121212;
 }
 
-.home .container{
-    display: inline-flex;
+@media screen and (max-width: 991px) {
+    .text-animation {
+        min-height: 40vh;
+    }
+
+    .text-animation .container .estatico {
+        font-size: 3vw !important;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 54px !important;
+    }
+
+    .text-animation .container .animado {
+        margin-top: -25px;
+    }
+
+    .animado li {
+        font-size: 3.6vw !important;
+    }
+
+    #svg-gui {
+        margin-right: 10% !important;
+    }
+    .animado li span::after {
+        top: 0;
+        margin-top: -2px !important;
+        border-left: 3px solid #ffff !important;
+    }
 }
 
-.home .container .estatico{
-    font-size: 60px;
+@media screen and (max-width: 640px) {
+    .text-animation {
+        min-height: 25vh;
+    }
+}
+@media screen and (max-width: 491px) {
+    .text-animation {
+        min-height: 20vh;
+    }
+    .margin {
+        margin-bottom: 200% !important;
+    }
+}
+
+
+.text-animation .container .estatico {
+    font-size: 2.08vw;
     font-weight: 600;
     margin-bottom: 0;
-    margin-top: 8px;
+    margin-top: 14px;
 }
 
-.home .container .animado{
-    margin-left: 15px ;
+.text-animation .container .animado {
+    padding-left: 0;
     line-height: 90px;
     height: 90px;
     overflow: hidden;
 }
 
-.animado li{
+.animado li {
     color: #00B4D8;
-    font-size: 60px;
+    font-size: 2.6vw;
     font-weight: 500;
     left: 0;
     position: relative;
     top: 0;
-    animation: slide 6s steps(4) infinite;
+    animation: slide 6.8s steps(4) infinite;
 }
 
 @keyframes slide {
-    100%{
+    100% {
         top: -360px;
     }
 }
@@ -196,19 +247,26 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-    border-left: 3px solid #ffff; 
-    animation: typing 1.5s steps(10) infinite;
-
+    top: 3px;
+    border-left: 5px solid #ffff;
+    animation: typing 1.7s steps(19) infinite;
+    background: #121212;
 }
 
-.animado li span{
+.animado li span {
     position: relative;
 
 }
 
 @keyframes typing {
-    100%{
+    100% {
         left: 100%;
-        margin: 0 -35px 0 35px;
+        margin: 0px -35px 0 35px;
     }
+}
+
+#svg-gui {
+    margin-right: 20% !important;
+    width: 30%;
+    height: 30%;
 }
