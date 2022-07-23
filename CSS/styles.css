@@ -1,3 +1,7 @@
+:root {
+    --gradiant: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(163, 163, 221, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
 /*
 ------------------------------------------------------------------
 ----------------------------  SITE CSS  --------------------------
@@ -5,9 +9,18 @@
 ------------------------------------------------------------------
 */
 
+* {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 li {
@@ -52,14 +65,14 @@ body {
         padding: 0 15%;
         background-color: #151515;
         border-bottom: solid 2px #272727;
-        height: 100px !important;
     }
 }
 
 .navbar {
-    padding: 0 15%;
+    padding: 10px 15%;
     background-color: #151515;
     border-bottom: solid 2px #272727;
+    font-weight: 600;
 }
 
 .navbar-brand {
@@ -157,6 +170,8 @@ body {
     border-bottom: solid #272727 3px;
 } */
 
+/*Text Animations*/
+
 .text-animation {
     margin-left: 15.5% !important;
     display: flex;
@@ -189,6 +204,7 @@ body {
     #svg-gui {
         margin-right: 10% !important;
     }
+
     .animado li span::after {
         top: 0;
         margin-top: -2px !important;
@@ -201,10 +217,12 @@ body {
         min-height: 25vh;
     }
 }
+
 @media screen and (max-width: 491px) {
     .text-animation {
         min-height: 20vh;
     }
+
     .margin {
         margin-bottom: 200% !important;
     }
@@ -212,8 +230,9 @@ body {
 
 
 .text-animation .container .estatico {
-    font-size: 2.08vw;
-    font-weight: 600;
+    font-size: 1.4vw;
+    font-weight: 400;
+    text-transform: uppercase;
     margin-bottom: 0;
     margin-top: 14px;
 }
@@ -227,7 +246,7 @@ body {
 
 .animado li {
     color: #00B4D8;
-    font-size: 2.6vw;
+    font-size: 2.3vw;
     font-weight: 500;
     left: 0;
     position: relative;
@@ -265,8 +284,67 @@ body {
     }
 }
 
+.btn-github{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-image-source: var(--gradiant);
+    border-image-slice: 1;
+    padding: .3rem 1rem;
+    font: inherit;
+}
+
+.buttons .fa-github {
+    font-size: 22px;
+}
+
+.buttons p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
 #svg-gui {
     margin-right: 20% !important;
     width: 30%;
     height: 30%;
+}
+
+.animation-scroll {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#scrollDownIcon {
+    font-size: 12px;
+    animation: scrollDown 2s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translate(0, -7px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 7px);
+        opacity: 0;
+    }
+}
+
+/*Sobre Mim*/
+
+.sobreMim {
+    /* border-top: solid #272727 3px; */
+    background-color: #151515;
+    min-height: 50vh;
 }
