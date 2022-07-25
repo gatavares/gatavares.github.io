@@ -1,7 +1,3 @@
-:root {
-    --gradiant: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(163, 163, 221, 1) 35%, rgba(0, 212, 255, 1) 100%);
-}
-
 /*
 ------------------------------------------------------------------
 ----------------------------  SITE CSS  --------------------------
@@ -228,7 +224,6 @@ body {
     }
 }
 
-
 .text-animation .container .estatico {
     font-size: 1.4vw;
     font-weight: 400;
@@ -284,16 +279,48 @@ body {
     }
 }
 
-.btn-github{
+.buttons {
+    display: flex;
+}
+
+.btn:active,
+.btn:focus,
+.btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-github,
+.btn-email {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-width: 0.5rem;
-    border-style: solid;
-    border-image-source: var(--gradiant);
-    border-image-slice: 1;
-    padding: .3rem 1rem;
-    font: inherit;
+    border-color: #6e5494;
+    color: #6e5494;
+}
+
+.btn-linkedin,
+.btn-curriculo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 15px;
+    border-color: #0A66C2;
+    color: #0A66C2;
+}
+
+.btn-linkedin:hover,
+.btn-github:hover,
+.btn-curriculo:hover,
+.btn-email:hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-color: #fff;
+    color: #fff;
+    background-color: #121212;
 }
 
 .buttons .fa-github {
@@ -306,6 +333,8 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
+
+
 
 
 
