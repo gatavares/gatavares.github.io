@@ -80,6 +80,13 @@ body {
     margin: 10px 30px;
 }
 
+.nav-link:hover {
+    color: #00B4D8 !important;
+    padding-bottom: 6px;
+    border-bottom: solid 2px #00B4D8;
+}
+
+
 .navbar-toggler {
     border: none;
     width: 20px;
@@ -297,8 +304,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-color: #6e5494;
-    color: #6e5494;
+    border-color: #7A0BC0;
+    color: #7A0BC0;
 }
 
 .btn-linkedin,
@@ -307,14 +314,22 @@ body {
     align-items: center;
     justify-content: space-evenly;
     margin-left: 15px;
-    border-color: #0A66C2;
-    color: #0A66C2;
+    border-color: #00B4D8;
+    color: #00B4D8;
+}
+
+.btn-github:hover,
+.btn-email:hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-color: #FA58B6;
+    color: #FA58B6;
+    background-color: #121212;
 }
 
 .btn-linkedin:hover,
-.btn-github:hover,
-.btn-curriculo:hover,
-.btn-email:hover {
+.btn-curriculo:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -333,10 +348,6 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
-
-
-
-
 
 #svg-gui {
     margin-right: 20% !important;
