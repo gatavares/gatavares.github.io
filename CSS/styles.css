@@ -219,6 +219,10 @@ body {
     .text-animation {
         min-height: 25vh;
     }
+
+    .buttons {
+        margin-top: -26px;
+    }
 }
 
 @media screen and (max-width: 491px) {
@@ -304,8 +308,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-color: #7A0BC0;
-    color: #7A0BC0;
+    border-color: #CAB8FF;
+    color: #e2d8ff;
 }
 
 .btn-linkedin,
@@ -313,7 +317,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 15px;
+    margin-left: 8%;
     border-color: #00B4D8;
     color: #00B4D8;
 }
@@ -323,9 +327,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-color: #FA58B6;
-    color: #FA58B6;
+    border-color: #7A0BC0;
     background-color: #121212;
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 0 0 15px rgba(122, 11, 192, .5), 0 0 10px rgba(122, 11, 192, .5);
 }
 
 .btn-linkedin:hover,
@@ -333,20 +338,77 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-color: #fff;
-    color: #fff;
+    border-color: #0A66C2;
     background-color: #121212;
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 0 0 15px rgba(10, 102, 194, .8), 0 0 10px rgba(10, 102, 194, .8);
 }
 
-.buttons .fa-github {
-    font-size: 22px;
+.buttons i {
+    font-size: 19px;
 }
 
 .buttons p {
     margin: 0;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+    .buttons i {
+        font-size: 1.53vh;
+    }
+
+    .buttons p {
+        font-size: 1.38vw;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .buttons {
+        margin-top: -5%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .buttons {
+        margin-top: -11%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .buttons {
+        margin-top: -13%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .buttons i {
+        font-size: 9px;
+    }
+
+    .buttons p {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .buttons {
+        margin-top: -15%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .buttons {
+        margin-top: -18%;
+    }
+}
+
+@media screen and (max-width: 491px) {
+    .buttons {
+        margin-top: -22%;
+    }
 }
 
 #svg-gui {
@@ -378,6 +440,13 @@ body {
     100% {
         transform: translate(0, 7px);
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .animation-scroll {
+        margin-top: 25px;
+        margin-bottom: 25px !important;
     }
 }
 
