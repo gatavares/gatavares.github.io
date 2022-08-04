@@ -41,5 +41,5 @@ Para analizares basta entrares em `<>Code` e analizares o projeto.
 Para alguma duvida contacte via email o seguinte email:<p></p>
 **guilhermeatavares89@gmail.com**
 
-[] # projeto pra aprender markdown
+<!-- projeto pra aprender markdown -->
 
