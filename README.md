@@ -28,11 +28,11 @@ Neste momento, sou aluno desta escola e estou a formar-me nesta área incrível,
 
 
 #### <ins>LEGENDA:</ins>
- - NIVEL 1 - Nivel de Base (0 a 100 horas)
- - NIVEL 2 - Nivel de inicio de estudo aprefundado (100 a 500 horas)
- - NIVEL 3 - Nivel Aprofundado (500 a 1000 horas)
- - NIVEL 4 - Nivel de Formação Académica (1000 a 2000 horas)
- - NIVEL 5 - Nivel de Formação ou Produção (>=2000 horas)
+ - NIVEL 1 - Nivel de Base
+ - NIVEL 2 - Nivel de inicio de estudo aprefundado
+ - NIVEL 3 - Nivel Aprofundado
+ - NIVEL 4 - Nivel de Formação Académica
+ - NIVEL 5 - Nivel de Formação ou Produção
 
 ## Ficheiros
 Todos estes ficheiros são de minha autoria e não são transferiveis nem os disponibilizarei. 
