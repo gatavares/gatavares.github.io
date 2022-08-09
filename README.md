@@ -6,7 +6,7 @@ O mesmo serve para expor os meus projetos e para **currículo interativo**.
 ### <ins>Quem eu sou?</ins>
 Eu sou o Guilherme Tavares, um programador júnior, formado na Escola Profissional Ruiz Costa.
 
-Comecei a programar com 14 anos, em casa e, quando descobri que, o que eu já fazia em casa conseguiria fazer para o meu futuro, não pensei duas vezes.
+Comecei a programar com 15 anos, em casa e, quando descobri que, o que eu já fazia em casa conseguiria fazer para o meu futuro, não pensei duas vezes.
 
 Decidi, em 2020, que iria ser programador e formar-me nesta área e encontrei uma escola em Matosinhos, Porto que tinha um curso de programação (Gestão e Programação de Sistemas Informáticos) e decidi candidatar-me ao mesmo.
 
