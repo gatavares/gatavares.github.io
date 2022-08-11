@@ -496,8 +496,8 @@ body {
 }
 
 .guiFoto img {
-    width: 47%;
-    opacity: 0.4;
+    width: 65%;
+    opacity: 0.4; 
     border-left: 5px solid #7A0BC0;
     transition: .3s ease-in-out;
 }
@@ -512,4 +512,54 @@ body {
 
 .Text p span {
     font-weight: bold;
+}
+
+.sobreMim{
+    letter-spacing: 1px;
+}
+
+.sobreMim-Text-Title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #c4c4c4;
+}
+
+.sobreMim-Text-Loc{
+    font-size: 18px;
+    font-weight: bold;
+    color: #c4c4c4;
+}
+
+.sobreMim-Text-Content{
+    font-size: 16px;
+    color: #c4c4c4;
+    line-height: 1.5rem;
+}
+
+.experiencia {
+    margin-top: 120px;
+    min-height: 50vh;
+}
+
+.experiencia-Text-Title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #c4c4c4;
+}
+
+.menu-lugares{
+    width: 230px;
+}
+
+.menu li{
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+.menu li.ativado{
+    border-left: 2px solid #00B4D8;
+}
+
+.menu li.desativado{
+    border-left: 2px solid rgb(104, 104, 104);
 }
