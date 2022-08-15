@@ -179,7 +179,7 @@ body {
     background-color: #121212;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .text-animation {
         min-height: 40vh;
         margin-left: 0% !important;
@@ -362,9 +362,10 @@ body {
     font-weight: 600;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .buttons {
         margin: 0 37% 0 37%;
+        margin-top: -2%;
     }
 
     .buttons i {
@@ -373,12 +374,6 @@ body {
 
     .buttons p {
         font-size: 1.38vw;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .buttons {
-        margin-top: -2%;
     }
 }
 
@@ -497,7 +492,7 @@ body {
 
 .guiFoto img {
     width: 65%;
-    opacity: 0.4; 
+    opacity: 0.4;
     border-left: 5px solid #7A0BC0;
     transition: .3s ease-in-out;
 }
@@ -514,23 +509,23 @@ body {
     font-weight: bold;
 }
 
-.sobreMim{
+.sobreMim {
     letter-spacing: 1px;
 }
 
-.sobreMim-Text-Title{
+.sobreMim-Text-Title {
     font-size: 24px;
     font-weight: bold;
     color: #c4c4c4;
 }
 
-.sobreMim-Text-Loc{
+.sobreMim-Text-Loc {
     font-size: 18px;
     font-weight: bold;
     color: #c4c4c4;
 }
 
-.sobreMim-Text-Content{
+.sobreMim-Text-Content {
     font-size: 16px;
     color: #c4c4c4;
     line-height: 1.5rem;
@@ -538,28 +533,141 @@ body {
 
 .experiencia {
     margin-top: 120px;
-    min-height: 50vh;
 }
 
-.experiencia-Text-Title{
+.experiencia-Text-Title {
     font-size: 24px;
     font-weight: 600;
     color: #c4c4c4;
 }
 
-.menu-lugares{
-    width: 230px;
+.menu-lugares {
+    width: 200px;
+    margin-top: 50px;
 }
 
-.menu li{
+.menu li {
     font-size: 1.1rem;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
 }
 
-.menu li.ativado{
+.menu li:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.ativado {
     border-left: 2px solid #00B4D8;
+    background-color: rgba(255, 255, 255, .05);
 }
 
-.menu li.desativado{
+.desativado {
     border-left: 2px solid rgb(104, 104, 104);
+}
+
+@media screen and (max-width: 1199px) {
+    .experiencia {
+        margin-top: 80px;
+    }
+
+    .menu-lugares {
+        margin-left: 23%;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu-lugares {
+        margin-left: 13%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-lugares {
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu-lugares {
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+}
+
+.slide-right {
+    -webkit-animation: slide-right 0.35s linear both;
+    animation: slide-right 0.35s linear both;
+}
+
+.artigos{
+    letter-spacing: 1px;
+    color: #c4c4c4;
+}
+
+.artigos p span{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1199px) {
+    .headerArtigo {
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .tituloArtigo {
+        margin-right: 30%;
+        font-size: 21px;
+    }
+    
+}
+
+.headerArtigo {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.tituloArtigo {
+    font-size: 21px;
+}
+
+.dataArtigo {
+    font-size: 15px;
+}
+
+.tituloArtigo,
+.dataArtigo {
+    font-weight: 500;
+}
+
+.categoriaArtigo{
+    font-size: 15px;
+    color: #00d2df;
+    margin-bottom: 20px;
 }
