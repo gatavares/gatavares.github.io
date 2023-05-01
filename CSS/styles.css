@@ -317,6 +317,7 @@ body {
     justify-content: space-evenly;
     border-color: #CAB8FF;
     color: #e2d8ff;
+    margin-right: 8%;
 }
 
 .btn-linkedin,
@@ -324,7 +325,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 8%;
     border-color: #00B4D8;
     color: #00B4D8;
 }
