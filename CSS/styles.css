@@ -663,3 +663,21 @@ body {
         transform: translate3d(0, 0, 0);
     }
 }
+
+
+
+.PAP {
+    margin-top: 120px;
+}
+
+.PAP-Text-Title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #c4c4c4;
+}
+
+.PAP-Text-Subtitle {
+    font-size: 19   px;
+    color: #00d2df;
+    margin-bottom: 20px;
+}
