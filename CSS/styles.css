@@ -664,8 +664,6 @@ body {
     }
 }
 
-
-
 .PAP {
     margin-top: 120px;
 }
@@ -676,8 +674,25 @@ body {
     color: #c4c4c4;
 }
 
+.PAP-Fotos{
+    margin-top: 20px;
+}
+
+.w-100 {
+    width: 78% !important;
+    margin-left: 13%;
+}
+
+.PAP .carousel-caption {
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px 0px rgba(255, 255, 255, 0.19) !important;
+    background-color: #000 !important;
+}
+
 .PAP-Text-Subtitle {
-    font-size: 19   px;
+    font-size: 19px;
     color: #00d2df;
     margin-bottom: 20px;
 }
+
