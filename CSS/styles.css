@@ -531,7 +531,7 @@ body {
     line-height: 1.5rem;
 }
 
-.Freelancer{
+.Freelancer {
     margin-top: 120px;
 }
 
@@ -668,9 +668,19 @@ body {
     }
 }
 
+.whatsappLink {
+    font-weight: bold;
+}
 .whatsappLink:hover {
-    /* color: #00d2df; */
+    font-weight: bold;
     color: #25D366;
+}
+
+@media screen and (max-width: 992px) {
+    .whatsappLink {
+        color: #25D366;
+        font-weight: bold;
+    }
 }
 
 .PAP {
