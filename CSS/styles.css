@@ -531,6 +531,10 @@ body {
     line-height: 1.5rem;
 }
 
+.Freelancer{
+    margin-top: 120px;
+}
+
 .experiencia {
     margin-top: 120px;
 }
@@ -692,8 +696,8 @@ body {
 .PAP .carousel-caption {
     color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px 0px rgba(255, 255, 255, 0.19) !important;
-    background-color: #000 !important;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.40) !important;
+    background-color: #272727 !important;
 }
 
 .PAP-Text-Subtitle {
@@ -702,8 +706,29 @@ body {
     margin-bottom: 20px;
 }
 
-.modal {
-    color: #000 !important;
+.modal,
+.modal-content {
+    background-color: #272727 !important;
+    color: #ffff !important;
+}
+
+.modal-header {
+    padding: 10px;
+}
+
+.modal-btnClose {
+    background-color: transparent !important;
+    color: #ffff !important;
+    font-size: 20px;
+    animation: wobble;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+}
+
+.modal-btnClose:hover {
+    background-color: transparent !important;
+    color: #00d2df !important;
+    font-size: 20px;
 }
 
 .PAP .zoom {
@@ -715,5 +740,4 @@ body {
 .PAP .zoom:hover {
     cursor: pointer;
     color: #00d2df !important;
-
 }
