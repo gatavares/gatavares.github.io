@@ -74,7 +74,8 @@
 
                     <div class="menu-lugares">
                         <div class="menu text-center">
-                            <li class="ativado" id="1" onclick="menu(1)"><a>Projeto</a></li> <!-- Trocar para icons -->
+                            <li class="ativado" id="1" onclick="menu(1)"><a><i class="fa-solid fa-magnifying-glass"
+                                        style="color: #ffffff;"></i></a></li> <!-- Trocar para icons -->
                             <li class="desativado" id="2" onclick="menu(2)"><a>👀👀</a></li> <!-- Trocar para icons -->
                             <li class="desativado" id="3" onclick="menu(3)"><a>FITDAY</a></li>
                             <li class="desativado" id="4" onclick="menu(4)"><a>ANM CONNECTION</a></li>
@@ -185,27 +186,38 @@
                                 aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="ASSETS/PAP/Gestao.png" class="d-block w-100" alt="...">
+                            <div class="carousel-item active" data-bs-interval="8000">
+                                <img src="ASSETS/PAP/Gestao.png" class="d-block w-100" alt="Página de Gestão">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="carousel-lable">Página de Gestão</h5>
+                                    <h5 class="carousel-lable">Página de Gestão &nbsp;
+                                        <a class="zoom" data-bs-toggle="modal" data-bs-target="#modalFoto1">
+                                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                        </a>
+                                    </h5>
                                     <p class="carousel-subLable">
                                         Página para gerir todos os horários de todas as turmas.
                                     </p>
                                 </div>
                             </div>
-                            <div class="carousel-item" data-bs-interval="10000">
-                                <img src="ASSETS/PAP/Horario.png" class="d-block w-100" alt="...">
+                            <div class="carousel-item" data-bs-interval="8000">
+                                <img src="ASSETS/PAP/Horario.png" class="d-block w-100" alt="Página de Horários">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="carousel-lable">Página de Horários</h5>
+                                    <h5 class="carousel-lable">Página de Horários &nbsp;
+                                        <a class="zoom" data-bs-toggle="modal" data-bs-target="#modalFoto2">
+                                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                        </a>
+                                    </h5>
                                     <p class="carousel-subLable">Página do horário da hora corrente.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="ASSETS/PAP/Escola.png" class="d-block w-100" alt="...">
+                                <img src="ASSETS/PAP/Escola.png" class="d-block w-100" alt="Página de Gestão Escolar">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>
-                                        <p class="carousel-lable">Página de Escola</p>
+                                    <h5 class="carousel-lable">
+                                        Página de Gestão Escolar &nbsp;
+                                        <a class="zoom" data-bs-toggle="modal" data-bs-target="#modalFoto3">
+                                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                        </a>
                                     </h5>
                                     <p class="carousel-subLable">Página onde pode gerir os professores e importar os
                                         horários.</p>
@@ -222,6 +234,54 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modals">
+                <div class="modal fade" id="modalFoto1" tabindex="-1" aria-labelledby="modalFoto1Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modalFoto1Label">Página de Gestão</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="ASSETS/PAP/Gestao.png" class="d-block w-100" alt="Página de Gestão">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalFoto2" tabindex="-1" aria-labelledby="modalFoto2Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modalFoto2Label">Página de Horários</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="ASSETS/PAP/Horario.png" class="d-block w-100" alt="Página de Gestão">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalFoto3" tabindex="-1" aria-labelledby="modalFoto3Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modalFoto3Label">Página de Gestão Escolar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="ASSETS/PAP/Escola.png" class="d-block w-100" alt="Página de Gestão">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

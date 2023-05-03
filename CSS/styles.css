@@ -679,14 +679,14 @@ body {
     color: #c4c4c4;
 }
 
-.PAP-Fotos{
+.PAP-Fotos {
     margin-top: 20px;
 }
 
-.w-100 {
+.PAP .w-100 {
     border-radius: 3px;
     width: 78% !important;
-    margin-left: 13%;
+    margin-left: 12%;
 }
 
 .PAP .carousel-caption {
@@ -700,4 +700,20 @@ body {
     font-size: 19px;
     color: #00d2df;
     margin-bottom: 20px;
+}
+
+.modal {
+    color: #000 !important;
+}
+
+.PAP .zoom {
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.PAP .zoom:hover {
+    cursor: pointer;
+    color: #00d2df !important;
+
 }
