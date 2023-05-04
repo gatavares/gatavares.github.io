@@ -3,12 +3,12 @@
         $pagina = $_GET['p'];
 
         if($pagina == "home")
-            include('CONTENT/PAGES/home.html');  
+            include('content/pages/home.html');  
         // else if($pagina == "contacto")
-        //     include('CONTENT/PAGES/contacto.php');
+        //     include('content/pages/contacto.php');
         else
-            include('CONTENT/PAGES/404.html');
+            include('content/pages/404.html');
     }else{
-        include('CONTENT/PAGES/home.html');
+        include('content/pages/home.html');
     }
 ?>

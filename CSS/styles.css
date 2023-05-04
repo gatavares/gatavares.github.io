@@ -531,12 +531,33 @@ body {
     line-height: 1.5rem;
 }
 
+
 .Freelancer {
     margin-top: 120px;
 }
 
+.whatsappLink {
+    font-weight: bold;
+}
+
+.whatsappLink:hover {
+    font-weight: bold;
+    color: #25D366;
+}
+
+@media screen and (max-width: 992px) {
+    .whatsappLink {
+        color: #25D366;
+        font-weight: bold;
+    }
+}
+
+
 .experiencia {
-    margin-top: 120px;
+    background-color: #151515;
+    margin-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .experiencia-Text-Title {
@@ -668,23 +689,9 @@ body {
     }
 }
 
-.whatsappLink {
-    font-weight: bold;
-}
-.whatsappLink:hover {
-    font-weight: bold;
-    color: #25D366;
-}
-
-@media screen and (max-width: 992px) {
-    .whatsappLink {
-        color: #25D366;
-        font-weight: bold;
-    }
-}
 
 .PAP {
-    margin-top: 120px;
+    margin-top: 70px;
 }
 
 .PAP-Text-Title {
@@ -717,7 +724,8 @@ body {
 }
 
 .modal,
-.modal-content {
+.modal-content,
+.card {
     background-color: #272727 !important;
     color: #ffff !important;
 }
@@ -750,4 +758,31 @@ body {
 .PAP .zoom:hover {
     cursor: pointer;
     color: #00d2df !important;
+}
+
+.Projetos {
+    background-color: #151515;
+    margin-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Projetos-Text-Title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #c4c4c4;
+}
+
+.Projetos-Grid {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .me-5 {
+        margin-right: 10rem !important;
+    }
+}
+
+.Projetos {
+    
 }

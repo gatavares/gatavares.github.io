@@ -1,6 +1,6 @@
 <?php
-    include('CONTENT/head.html');
-    include('CONTENT/nav.html');
-    include('ROUTES/routes.php');
-    include('CONTENT/footer.html');
+    include('content/head.html');
+    include('content/nav.html');
+    include('routes/routes.php');
+    include('content/footer.html');
 ?>
