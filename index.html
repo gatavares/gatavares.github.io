@@ -93,11 +93,11 @@
         </div>
     </section>
     <div class="animation-scroll text-center mb-5">
-        <a href="#content">scroll down<i id="scrollDownIcon" class="fa-solid fa-angles-down ms-2"></i></a>
+        <a style="cursor: pointer;" onclick="getPoint('#sobreMim')">scroll down<i id="scrollDownIcon" class="fa-solid fa-angles-down ms-2"></i></a>
     </div>
 
     <section id="content">
-        <div class="container-fluid sobreMim">
+        <div class="container-fluid sobreMim" id="sobreMim">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12 col-xl-4 my-5 my-xl-5">
@@ -106,8 +106,9 @@
                     <div class="col-12 col-xl-8 mb-5 my-xl-5">
                         <div class="sobreMim-Text Text text-start">
                             <p class="sobreMim-Text-Title mb-xl-4">SOBRE MIM</p>
+                            <p id="output"></p>
                             <p class="sobreMim-Text-Loc mb-xl-3">Porto, Portugal</p>
-                            <p class="sobreMim-Text-Content">
+                            <p class="sobreMim-Text-Content" style="text-align: justify;">
                                 Olá, eu sou o Guilherme Tavares!<br>
                                 Sou um programador júnior e ainda em formação na <span>Escola Profissional Ruiz
                                     Costa</span>.<br>
@@ -142,17 +143,26 @@
                         <p class="PAP-Text-Title">TENS UM PROJETO E NÃO TENS SITE PRÓPRIO?</p>
                         <p class="PAP-Text-Subtitle">Entra em contacto comigo!</p>
                     </div>
-                    <div class="col-12 col-xl-12 PAP-Fotos">
-                        Se estás interessado em obter um orçamento personalizado para o teu projeto. É possível fazeres
-                        o
-                        pedido diretamente através do teu <span style="color: #25D366;">Whatsapp</span> para
-                        <a class="whatsappLink"
-                            href="https://wa.me/351962817885?text=Tenho%20um%20projeto%20que%20gostaria%20de%20solicitar%20o%20meu%20orçamento!"
-                            target="_blank">+351 962 817 885</a>, ou
-                        por email, no endereço
-                        <span style="font-weight: bold;">guilhermeatavares89@gmail.com</span>. Sente-te à vontade para
-                        apresentar todas as tuas ideias e necessidades, estarei disponível para discuti-las contigo e
-                        oferecer-te a solução mais adequada para o teu negócio.
+                    <div class="col-12 col-xl-12 PAP-Fotos" style="text-align: justify;">
+                        Estás interessado(a) em obter um orçamento personalizado para o teu projeto? Contacta-me! <br>
+                        Estarei disponível para discutir sobre as tuas ideias, necessidades e oferecer a solução mais 
+                        adequada para o teu negócio.
+                    </div>
+                    <div class="Freelancer-buttons">
+                        <a href="https://wa.me/351962817885?text=Tenho%20um%20projeto%20que%20gostaria%20de%20solicitar%20o%20meu%20orçamento!"
+                            target="_blank" class="btn-whatsapp me-4">
+                            <button type="button" class="btn btn-outline-light btn-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <p>Whatsapp</p>
+                            </button>
+                        </a>
+                        <a href="mailto:guilhermeatavares89@gmail.com" target="_blank"
+                            class="btn-email">
+                            <button type="button" class="btn btn-outline-light btn-email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>Email</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -239,7 +249,8 @@
                                     <p class="dataArtigo align-bottom" id="dataArtigo"></p>
                                 </div>
                                 <p class="categoriaArtigo" id="categoriaArtigo">Quem sabe, na sua empresa?</p>
-                                <p class="textoArtigo" id="textoArtigo">Estarei disponivel para propostas de emprego
+                                <p class="textoArtigo" id="textoArtigo">Estarei disponivel
+                                    para propostas de emprego
                                     relacionado
                                     com a minha
                                     paixão! Pode entrar em contato via email: <span>guilhermeatavares89@gmail.com</span>
@@ -253,7 +264,8 @@
                                     <p class="dataArtigo align-bottom" id="dataArtigo">Abr 2021 - Ago 2022</p>
                                 </div>
                                 <p class="categoriaArtigo" id="categoriaArtigo">Fitday Company</p>
-                                <p class="textoArtigo" id="textoArtigo">O meu primeiro trabalho extra-escolar foi a
+                                <p class="textoArtigo" id="textoArtigo">O meu primeiro
+                                    trabalho extra-escolar foi a
                                     criação de uma loja online do zero. Era uma loja de venda de roupa desportiva
                                     feminina diferenciada e confortável, desenvolvida de raiz por min em conjunto com um
                                     colega. Inicialmente era para ser desenvolvido em HTML, CSS, JS, entre outras, mas
@@ -453,7 +465,7 @@
                             <div class="col-sm-12 col-xl-5 mb-5 me-5">
                                 <div class="Projeto-Image">
                                     <a href="" target="_blank">
-                                        <img src="assets/fisiorespira.png" alt="fisiorespira" width="100%">
+                                        <img src="assets/projetos/fisiorespira.png" alt="fisiorespira" width="100%">
                                     </a>
                                 </div>
                                 <div class="Projeto-Content">
@@ -462,7 +474,7 @@
                                         JSX,
                                         Firebase</p>
                                     <p class="Projetos-Ano">Ano de desenvolvimento: 2021</p>
-                                    <p class="Projetos-Descricao">Descrição</p>
+                                    <p class="Projetos-Descricao" style="text-align: justify;">Descrição</p>
                                 </div>
                                 <div class="Projetos-Footer container-fluid">
                                     <div class="Projetos-buttons">
@@ -478,14 +490,14 @@
                             <div class="col-sm-12 col-xl-5 mb-3">
                                 <div class="Projeto-Image">
                                     <a href="" target="_blank">
-                                        <img src="assets/pwp.png" alt="Professional World Podcast" width="100%">
+                                        <img src="assets/projetos/pwp.png" alt="Professional World Podcast" width="100%">
                                     </a>
                                 </div>
                                 <div class="Projeto-Content">
                                     <p class="Projetos-Title">Professional World Podcast</p>
                                     <p class="Projetos-Tecnologias">Tecnologias usadas no projeto: HTML, CSS, JS</p>
                                     <p class="Projetos-Ano">Ano de desenvolvimento: 2020</p>
-                                    <p class="Projetos-Descricao">Descrição</p>
+                                    <p class="Projetos-Descricao" style="text-align: justify;">Descrição</p>
                                 </div>
                                 <div class="Projetos-Footer">
                                     <div class="Projetos-buttons">
@@ -493,6 +505,29 @@
                                             <button type="button" class="btn btn-outline-light btn-visitar">
                                                 <i class="fa-solid fa-up-right-from-square"></i>
                                                 <p>Visitar</p>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-xl-5 mb-3">
+                                <div class="Projeto-Image">
+                                    <a href="" target="_blank">
+                                        <img src="assets/projetos/fitday.png" alt="Fitday" width="100%">
+                                    </a>
+                                </div>
+                                <div class="Projeto-Content">
+                                    <p class="Projetos-Title">FITDAY</p>
+                                    <p class="Projetos-Tecnologias">Tecnologias usadas no projeto: WordPress, PHP, MbWay API, Stripe</p>
+                                    <p class="Projetos-Ano">Ano de desenvolvimento: 2021</p>
+                                    <p class="Projetos-Descricao" style="text-align: justify;">Descrição</p>
+                                </div>
+                                <div class="Projetos-Footer">
+                                    <div class="Projetos-buttons">
+                                        <a href="" target="_blank" class="btn-visitar">
+                                            <button type="button" class="btn btn-outline-light btn-visitar">
+                                                <i class="fa-solid fa-plus"></i>
+                                                <p>Ver Mais</p>
                                             </button>
                                         </a>
                                     </div>

@@ -7,10 +7,10 @@ function menu(id) {
     else {
         if (element.className === "desativado") {
             element.className = "ativado";
-            document.getElementById("A"+id).className = "showned"
+            document.getElementById("A" + id).className = "showned"
 
             document.getElementById(idSaved).className = "desativado"
-            document.getElementById("A"+idSaved).className = "hiden"
+            document.getElementById("A" + idSaved).className = "hiden"
 
             idSaved = id;
         }
@@ -18,4 +18,10 @@ function menu(id) {
             element.className = "desativado"
         }
     }
+}
+
+function getPoint(id) {
+    document.querySelector(id).scrollIntoView({ 
+        behavior: 'smooth' 
+      });
 }

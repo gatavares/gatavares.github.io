@@ -7,6 +7,7 @@
 
 * {
     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -310,8 +311,7 @@ body {
     box-shadow: none;
 }
 
-.btn-github,
-.btn-email {
+.btn-github {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -320,8 +320,7 @@ body {
     margin-right: 8%;
 }
 
-.btn-linkedin,
-.btn-curriculo {
+.btn-linkedin {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -329,8 +328,7 @@ body {
     color: #00B4D8;
 }
 
-.btn-github:hover,
-.btn-email:hover {
+.btn-github:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -340,8 +338,7 @@ body {
     text-shadow: 0 0 15px rgba(122, 11, 192, .5), 0 0 10px rgba(122, 11, 192, .5);
 }
 
-.btn-linkedin:hover,
-.btn-curriculo:hover {
+.btn-linkedin:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -549,6 +546,86 @@ body {
     .whatsappLink {
         color: #25D366;
         font-weight: bold;
+    }
+}
+
+.Freelancer-buttons {
+    margin-top: 20px;
+    display: flex;
+}
+
+.btn:active,
+.btn:focus,
+.btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    border-color: #25D366;
+    color: #25D366;
+}
+
+.btn-whatsapp:hover {
+    display: flex;
+    align-items: center;
+    border-color: #25D366;
+    background-color: #121212;
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 0 0 15px rgba(38, 212, 102, .5), 0 0 10px rgba(38, 212, 102, .5);
+}
+
+.btn-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-color: #1771b6;
+    color: #1771b6;
+}
+
+.btn-email:hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-color: #0A66C2;
+    background-color: #121212;
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 0 0 15px rgba(10, 102, 194, .8), 0 0 10px rgba(10, 102, 194, .8);
+}
+
+.Freelancer-buttons i {
+    font-size: 22px;
+}
+
+.Freelancer-buttons p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 992px) {
+    .Freelancer-buttons i {
+        font-size: 1.53vh;
+    }
+
+    .Freelancer-buttons p {
+        font-size: 1.38vw;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .Freelancer-buttons i {
+        font-size: 13px;
+    }
+
+    .Freelancer-buttons p {
+        font-size: 12px;
     }
 }
 
@@ -772,7 +849,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-    .me-5 {
+    .Projetos-Grid .me-5 {
         margin-right: 10rem !important;
     }
 }
@@ -820,11 +897,6 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #c4c4c4;
-}
-
-
-.btn-info {
-    background: linear-gradient(#71d5e2, #0C8BCB);
 }
 
 .Projetos-buttons {
