@@ -21,7 +21,7 @@ function menu(id) {
 }
 
 function getPoint(id) {
-    document.querySelector(id).scrollIntoView({ 
-        behavior: 'smooth' 
-      });
+    document.querySelector(id).scrollIntoView({
+        behavior: 'smooth'
+    });
 }
