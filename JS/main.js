@@ -25,3 +25,7 @@ function getPoint(id) {
         behavior: 'smooth'
     });
 }
+
+const data = new Date();
+let ano = data.getFullYear();
+document.getElementById("copy").innerHTML = `&copy; ` + ano;

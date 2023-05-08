@@ -959,3 +959,8 @@ body {
         font-size: 12px;
     }
 }
+
+.Footer .linkedin {
+    color: #00d2df;
+    cursor: pointer;
+}
