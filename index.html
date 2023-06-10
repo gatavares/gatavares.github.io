@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guilherme Tavares</title>
-    <link rel="icon" type="image/x-icon" href="ASSETS/logo.png">
+    <link rel="icon" type="image/x-icon" href="./ASSETS/logo2.png">
 
 
     <!-- FONTS SOURCE -->
@@ -497,7 +497,7 @@
 
                                 <div class="Projetos-Footer">
                                     <div class="Projetos-buttons">
-                                        <a href="" target="_blank" class="btn-visitar">
+                                        <a onclick="warning()" class="btn-visitar">
                                             <button type="button" class="btn btn-outline-light btn-visitar">
                                                 <i class="fa-solid fa-up-right-from-square"></i>
                                                 <p>Visitar</p>
@@ -531,12 +531,30 @@
                                 </div>
                                 <div class="Projetos-Footer container-fluid">
                                     <div class="Projetos-buttons">
-                                        <a href="" target="_blank" class="btn-visitar">
+                                        <a data-bs-toggle="modal" data-bs-target="#modalFoto4" class="btn-visitar">
                                             <button type="button" class="btn btn-outline-light btn-visitar">
                                                 <i class="fa-solid fa-up-right-from-square"></i>
                                                 <p>Visitar</p>
                                             </button>
                                         </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="modalFoto4" tabindex="-1" aria-labelledby="modalFoto4Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalFoto4Label">Aplicação FISIORESPIRA</h1>
+                                            <button type="button" class="btn btn-link modal-btnClose"
+                                                data-bs-dismiss="modal" aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video src="./ASSETS/fisiorespira/FisioRespiraCurto.mp4" autoplay loop></video>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -562,12 +580,30 @@
                                 </div>
                                 <div class="Projetos-Footer">
                                     <div class="Projetos-buttons">
-                                        <a href="" target="_blank" class="btn-visitar">
+                                        <a data-bs-toggle="modal" data-bs-target="#modalFoto5" class="btn-visitar">
                                             <button type="button" class="btn btn-outline-light btn-visitar">
                                                 <i class="fa-solid fa-plus"></i>
                                                 <p>Ver Mais</p>
                                             </button>
                                         </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="modalFoto5" tabindex="-1" aria-labelledby="modalFoto5Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalFoto5Label">fitday.pt</h1>
+                                            <button type="button" class="btn btn-link modal-btnClose"
+                                                data-bs-dismiss="modal" aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="ASSETS/fitday/fitday.png" class="d-block w-100" alt="Fitday">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -617,7 +653,7 @@
                 <div class="Footer border-top mt-3 mb-3 py-3">
                     <span id="copy"></span>&nbsp;
                     <span>| Desenvolvido por
-                        <img class="footer-icon" src="./ASSETS/250.png" alt="logo">
+                        <img class="footer-icon" src="./ASSETS/logo.png" alt="logo">
                         <a href="https://www.linkedin.com/in/guilhermetavares890/" target="_blank" class="linkedin">
                             Guilherme Tavares
                         </a>

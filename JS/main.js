@@ -29,3 +29,9 @@ function getPoint(id) {
 const data = new Date();
 let ano = data.getFullYear();
 document.getElementById("copy").innerHTML = `&copy; ` + ano;
+
+
+function warning() {
+    alert("Ainda não é possivel publicar este projeto! Visualize as imagens disponibilizadas em cima.");
+    getPoint("#PAP");
+}
