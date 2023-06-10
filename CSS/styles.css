@@ -964,3 +964,7 @@ body {
     color: #00d2df;
     cursor: pointer;
 }
+
+.footer-icon {
+    height: 40px;
+}
