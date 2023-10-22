@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
-<body>
+<body onresize="novo()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-ghost">
         <div class="container-fluid">
             <a class="navbar-brand" href="">‹GAT/›</a>
@@ -464,16 +464,88 @@
                         <p class="Projetos-Text-Title">PROJETOS</p>
                     </div>
 
+
                     <div class="container-fluid col-12 col-xl-12 Projetos-Grid">
-                        <div class="row">
-                            <div class="col-sm-12 col-xl-5">
-                                <h5><span class="badge bg-primary" style="margin-bottom: 5px;">Novo</span></h5>
+
+
+                        <div id="novo2">
+                            <div class="row" class="showned">
+                                <div class="col-sm-12 col-xl-5 me-5">
+                                    <h5><span class="badge bg-primary" style="margin-bottom: 5px;">Novo</span></h5>
+                                </div>
+                                <div class="col-sm-12 col-xl-5">
+                                    <h5><span class="badge bg-primary" style="margin-bottom: 5px;">Novo</span></h5>
+                                </div>
                             </div>
-                            <div class="col-sm-12 col-xl-5 me-5">
+                        </div>
+
+                        <div id="novo" class="hiden">
+                            <div class="row">
+                                <div class="col-sm-12 col-xl-5">
+                                    <h5><span class="badge bg-primary" style="margin-bottom: 5px;">Novo</span></h5>
+                                </div>
+                                <div class="col-sm-12 col-xl-5 me-5">
+                                </div>
                             </div>
                         </div>
 
                         <div class="row">
+                            <div class="col-sm-12 col-xl-5 mb-5 me-5">
+                                <div class="Projeto-Image">
+                                    <a onclick="warning()">
+                                        <img src="assets/projetos/SOU.png" alt="SOU" width="100%">
+                                    </a>
+                                </div>
+                                <div class="Projeto-Content">
+                                    <p class="Projetos-Title">SOU</p>
+                                    <p class="Projetos-Tecnologias">React Native, UI Kitten, Expo,
+                                        Firebase</p>
+                                    <p class="Projetos-Ano">2023 - NOW</p>
+                                    <p class="Projetos-Descricao" style="text-align: justify; font-weight: 300;"><span
+                                            style="font-weight: bold;">Em processo...
+                                    </p>
+                                </div>
+
+                                <div class="Projetos-Footer">
+                                    <div class="Projetos-buttons">
+                                        <!-- <a onclick="warning()" class="btn-visitar">
+                                            <button type="button" class="btn btn-outline-light btn-visitar">
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                                <p>Visitar</p>
+                                            </button>
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-xl-5 mb-5">
+                                <div class="Projeto-Image">
+                                    <a href="https://gatavares.github.io/professionalworldpodcast/" target="_blank">
+                                        <img src="assets/projetos/JNA.png" alt="Professional World Podcast"
+                                            width="100%">
+                                    </a>
+                                </div>
+                                <div class="Projeto-Content">
+                                    <p class="Projetos-Title">João Nuno Arquitetos</p>
+                                    <p class="Projetos-Tecnologias">ReactJS, HTML, CSS, JS, MUI</p>
+                                    <p class="Projetos-Ano">2023 - NOW</p>
+                                    <p class="Projetos-Descricao" style="text-align: justify; font-weight: 300;"><span
+                                            style="font-weight: bold;">Em processo...
+                                    </p>
+                                </div>
+                                <div class="Projetos-Footer">
+                                    <div class="Projetos-buttons">
+                                        <!-- <a href="https://gatavares.github.io/professionalworldpodcast/" target="_blank"
+                                            class="btn-visitar">
+                                            <button type="button" class="btn btn-outline-light btn-visitar">
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                                <p>Visitar</p>
+                                            </button>
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="col-sm-12 col-xl-5 mb-5 me-5">
                                 <div class="Projeto-Image">
                                     <a onclick="warning()">
@@ -546,14 +618,16 @@
                                 <div class="modal-dialog modal-fullscreen">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="modalFoto4Label">Aplicação FISIORESPIRA</h1>
+                                            <h1 class="modal-title fs-5" id="modalFoto4Label">Aplicação FISIORESPIRA
+                                            </h1>
                                             <button type="button" class="btn btn-link modal-btnClose"
                                                 data-bs-dismiss="modal" aria-label="Close">
                                                 <i class="fa-solid fa-xmark"></i>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <video src="./ASSETS/fisiorespira/FisioRespiraCurto.mp4" controls autoplay loop></video>
+                                            <video src="./ASSETS/fisiorespira/FisioRespiraCurto.mp4" controls autoplay
+                                                loop></video>
                                         </div>
                                     </div>
                                 </div>
@@ -561,7 +635,7 @@
 
                             <div class="col-sm-12 col-xl-5 mb-5 me-5">
                                 <div class="Projeto-Image">
-                                    <a data-bs-toggle="modal" data-bs-target="#modalFoto5" >
+                                    <a data-bs-toggle="modal" data-bs-target="#modalFoto5">
                                         <img src="assets/projetos/fitday.png" alt="Fitday" width="100%">
                                     </a>
                                 </div>

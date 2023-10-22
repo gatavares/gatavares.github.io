@@ -20,6 +20,20 @@ function menu(id) {
     }
 }
 
+function novo() {
+    const width = window.innerWidth
+    console.log(width)
+
+    if (width >= 1200) {
+        document.getElementById('novo2').className = "showned"
+        document.getElementById('novo').className = "hiden"
+    }
+    else {
+        document.getElementById('novo').className = "showned"
+        document.getElementById('novo2').className = "hiden"
+    }
+}
+
 function getPoint(id) {
     document.querySelector(id).scrollIntoView({
         behavior: 'smooth'
