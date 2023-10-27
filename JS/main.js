@@ -27,12 +27,16 @@ function novo() {
     if (width >= 1200) {
         document.getElementById('novo2').className = "showned"
         document.getElementById('novo').className = "hiden"
+        document.getElementById('novo3').className = "hiden"
     }
     else {
         document.getElementById('novo').className = "showned"
+        document.getElementById('novo3').className = "showned"
         document.getElementById('novo2').className = "hiden"
     }
 }
+
+novo()
 
 function getPoint(id) {
     document.querySelector(id).scrollIntoView({
