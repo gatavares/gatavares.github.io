@@ -754,6 +754,10 @@ body {
     display: none;
 }
 
+.textoArtigo a:hover{
+    color: #00B4D8;
+}
+
 @keyframes show-right {
     from {
         opacity: 0;

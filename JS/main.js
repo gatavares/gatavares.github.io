@@ -50,6 +50,6 @@ document.getElementById("copy").innerHTML = `&copy; ` + ano;
 
 
 function warning() {
-    alert("Ainda não é possivel publicar este projeto! Visualize as imagens disponibilizadas em cima.");
+    alert("Não foi permitido publicar este projeto! Sugiro visualizar outro projeto.");
     getPoint("#PAP");
 }
