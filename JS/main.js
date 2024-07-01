@@ -51,5 +51,5 @@ document.getElementById("copy").innerHTML = `&copy; ` + ano;
 
 function warning() {
     alert("Não foi permitido publicar este projeto! Sugiro visualizar outro projeto.");
-    getPoint("#PAP");
+    getPoint("#PAP"); 
 }
